@@ -20,6 +20,44 @@
 			nav {
 			margin-bottom: 25px;	
 			}
+			#cf {
+  				position:relative;
+  				height:281px;
+ 				width:450px;
+  				margin:0 auto;
+			}
+
+			#cf img {
+  				position:absolute;
+  				left:0;
+  				-webkit-transition: opacity 1s ease-in-out;
+  				-moz-transition: opacity 1s ease-in-out;
+  				-o-transition: opacity 1s ease-in-out;
+  				transition: opacity 1s ease-in-out;
+			}
+			@keyframes cf3FadeInOut {
+  			0% {
+  				opacity:1;
+			}
+			45% {
+				opacity:1;
+			}
+			55% {
+				opacity:0;
+			}
+			100% {
+				opacity:0;
+			}
+			}
+
+			#cf3 img.top {
+				animation-name: cf3FadeInOut;
+				animation-timing-function: ease-in-out;
+				animation-iteration-count: infinite;
+				animation-duration: 10s;
+				animation-direction: alternate;
+			}
+			
 		</style>
         </head>
 
@@ -45,7 +83,11 @@
 </nav>
       <div>
       <div>
-        <center><img class="profile-picture" src="AndrewCWillis.github.io/ProfilePicCirc.png" width="300"/></center>
+	<div id="cf">
+		
+        <center><img class="bottom" src="AndrewCWillis.github.io/ProfilePicCirc.png" width="300"/></center>
+	<center><img class="top" src="AndrewCWillis.github.io/profCircII.png" width="300"/></center>												 
+	</div>
         <center><h1 class="name">Andrew C. Willis</h1></center>
         <center><h4 class="subtitle">CS Student, Math Minor</h4></center>
      </div>
