@@ -54,7 +54,7 @@
 <tr>
   <td width="500" align='center'><div class="gallery">
     <img src="AndrewCWillis.github.io/Hercules.jpg" alt="Hercules Cluster" style="width:400px">
-	  <div class="desc" id='HC'>The Hercules Celestial Cluster</div>
+	  <div class="desc" id='HC' data-toggle='modal' data-target='#mymodal'>The Hercules Celestial Cluster</div>
 	  </div></td>
  <td width="500" align='center'> <div class="gallery">
     <img src="AndrewCWillis.github.io/Full.jpg" alt="Full Moon" style="width:400px">
@@ -105,7 +105,7 @@
                  </script>
 	<script>
 		$('#HC').click(function(){
-		$('.modal-title').text('The Hercules Cluster');$('#mymodal').attr('tabindex', '1');});
+		$('.modal-title').text('The Hercules Cluster');});
 		$('#FM').click(function(){
 		$('.modal-title').text('The Full Moon');});
 		$('#SR').click(function(){
